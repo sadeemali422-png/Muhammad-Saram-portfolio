@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    transition: 0.5s;
+}
+
+/* LIGHT MODE */
+body.light {
+    background: #f1f5f9;
+    color: black;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #111827;
+    position: sticky;
+    top: 0;
+}
+
+body.light .navbar {
+    background: #e2e8f0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.mode-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px;
+}
+
+/* HEADINGS */
+h1 {
+    text-align: center;
+    color: #38bdf8;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
+
+/* CV BUTTON */
+.cv-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
